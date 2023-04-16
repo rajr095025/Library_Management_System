@@ -1,8 +1,7 @@
-package com.example.librarymanagementsystem.comtroller;
+package com.example.librarymanagementsystem.controller;
 
 import com.example.librarymanagementsystem.entity.Student;
 import com.example.librarymanagementsystem.service.StudentService;
-import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

@@ -1,4 +1,4 @@
-package com.example.librarymanagementsystem.comtroller;
+package com.example.librarymanagementsystem.controller;
 
 import com.example.librarymanagementsystem.entity.Author;
 import com.example.librarymanagementsystem.service.AuthorService;

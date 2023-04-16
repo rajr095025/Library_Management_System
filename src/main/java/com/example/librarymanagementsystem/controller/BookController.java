@@ -1,8 +1,6 @@
-package com.example.librarymanagementsystem.comtroller;
+package com.example.librarymanagementsystem.controller;
 
-import com.example.librarymanagementsystem.entity.Author;
 import com.example.librarymanagementsystem.entity.Book;
-import com.example.librarymanagementsystem.service.AuthorService;
 import com.example.librarymanagementsystem.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
