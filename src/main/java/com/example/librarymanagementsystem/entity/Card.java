@@ -7,8 +7,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 //we can write in any order
 @Entity
@@ -25,6 +28,9 @@ public class Card {
     @CreationTimestamp
     private Date issueDate;
 
+    @UpdateTimestamp
+    private Date lastUpdatedDate;
+
     @Enumerated(EnumType.STRING)
     private CardStatus status;
 
@@ -33,4 +39,10 @@ public class Card {
     @OneToOne
     @JoinColumn
     Student student;
+
+    @OneToMany(mappedBy = "card", cascade = CascadeType.ALL)
+    List<Book> booksIssued;
+
+    @OneToMany(mappedBy = "card", cascade = CascadeType.ALL)
+    List<Transaction> transactionList;
 }

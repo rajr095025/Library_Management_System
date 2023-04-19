@@ -29,7 +29,7 @@ public class Student {
     @Enumerated(EnumType.STRING)
     private Department department;
 
-    private String mobile;
+    private String mobNo;
 
     @OneToOne(mappedBy = "student", cascade=CascadeType.ALL)
     Card card;
